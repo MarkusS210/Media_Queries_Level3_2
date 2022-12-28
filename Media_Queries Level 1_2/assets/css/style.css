@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header section {
+    background-color: aqua;
+    padding: 3vh 5vw;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section:first-child {
+    display: flex;
+   flex-wrap: wrap;
+   width: 80%;
+   
+}
+
+main section:last-child {
+    width: 20%;
+    align-items: center;
+    
+}
+
+main section article {
+    margin: 2vh auto;
+    width: 80%;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+}
+
+.a1 {
+    background-color: blue;
+    padding: 3vh 3vw;
+}
+
+.a2{
+    background-color: rosybrown ;
+    padding: 3vh 3vw;  
+
+}
+
+.a3{
+    background-color: palevioletred;
+    padding: 3vh 3vw;  
+
+}
+
+.a4{
+    background-color: lightgreen ;
+    padding: 3vh 3vw;
+
+}
+
+
+.a5 {
+    background-color: mediumspringgreen ;
+    padding: 3vh auto;
+    height: 200px; 
+}
+
+footer {
+    background-color: rgb(103, 103, 171);
+    padding: 3vh 5vw;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+
+main {
+    flex-direction: column;
+}
+
+    .aside {
+        max-width: 100%;
+        order: 0;
+    }
+    .section1{
+        order: 1;
+        width: 100vw;
+    }
+
+
+}
